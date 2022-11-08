@@ -7,11 +7,11 @@ import { RecipeService } from '../recipe.service';
 @Component({
   selector: 'app-recipe-detail',
   templateUrl: './recipe-detail.component.html',
-  styleUrls: ['./recipe-detail.component.css']
+  styleUrls: ['./recipe-detail.component.scss']
 })
 export class RecipeDetailComponent implements OnInit {
-  recipe: Recipe;
-  id: number;
+  recipe!: Recipe;
+  id!: number;
 
   constructor(private recipeService: RecipeService,
               private route: ActivatedRoute,
